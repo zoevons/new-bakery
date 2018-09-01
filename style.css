@@ -1,0 +1,240 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+/* Headers */
+.where-we-are, .gallery,
+.products, .meet-the-team {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Bakery Name */
+header {
+  width: 100%;
+}
+
+/*.navbar-brand a {
+  color: white;
+  font-family: 'Leckerli One', cursive;s
+}*/
+
+.bg-dark {
+    background-color: black;
+}
+
+/* Main Image and Text with Button */
+#container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 0;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.btn {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Where we are */
+.opening-times {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.email {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Gallery */
+#gallery-section {
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+/* Products */
+#products-section {
+  width: 100%;
+  margin-top: -60px;
+}
+
+img.product-image-cookie  {
+  width: 100%;
+}
+
+.product-name {
+  text-align: center;
+}
+
+ .thumbnail {
+   border: 0;
+ }
+
+/* The Team */
+#team-section {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.meet-the-team {
+  padding-bottom: 30px;
+}
+
+.team-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team-info {
+  text-align: left;
+  font-size: 18px;
+}
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-baking {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+address {
+  font-size: 18px;
+}
+
+.copyright {
+  padding-bottom: 30px;
+}
+
+/* Media Queries */
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px){
+  a.navbar-brand {
+    margin: 0;
+  }
+
+  #gallery-section {
+    margin-bottom: 0;
+  }
+
+  #products-section {
+    margin-top: 0;
+}
+
+  .thumbnail img {
+    width:100%;
+  }
+
+  .product-image-cookie {
+    height: 0;
+  }
+
+  p.team-info {
+    text-align: center;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  a.navbar-brand {
+    margin: 0;
+  }
+
+  h2.first-header, h3.subheader {
+    font-size: 18px;
+    color: white;
+  }
+
+  .text {
+    top: 50%;
+  }
+
+  #gallery-section {
+    height: 240px;
+  }
+
+  #products-section {
+    margin-top: 150px;
+  }
+
+  img.product-image-cookie {
+    width: 100%;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .meet-the-team {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .team-name {
+    margin-top: 30px;
+  }
+
+  p.team-info {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .footer-baking, .copyright {
+    text-align: center;
+  }
+}
